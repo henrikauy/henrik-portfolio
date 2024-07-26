@@ -135,6 +135,7 @@ import { motion } from 'framer-motion';
 
 const Resume = () => {
     return (
+        // animation
         <motion.div
             initial={{ opacity: 0 }}
             animate={{
@@ -143,6 +144,7 @@ const Resume = () => {
             }}
             className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
         >
+            {/* tabs */}
             <div className="container mx-auto">
                 <Tabs
                     defaultValue="about"
@@ -189,6 +191,7 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
+
                         {/* education */}
                         <TabsContent value="education" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -221,6 +224,7 @@ const Resume = () => {
                                 </ScrollArea>
                             </div>
                         </TabsContent>
+
                         {/* skills */}
                         <TabsContent value="skills" className="w-full h-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -255,6 +259,7 @@ const Resume = () => {
                                 </ul>
                             </div>
                         </TabsContent>
+
                         {/* about */}
                         <TabsContent value="about" className="w-full text-center xl:text-left">
                             <div className='flex flex-col gap-[30px]'>
